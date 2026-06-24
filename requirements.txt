@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# Runtime deps for the two tutorial NOTEBOOKS (what participants need in Colab).
+# Most of these are pre-installed on Google Colab; listed here for local runs.
+# ---------------------------------------------------------------------------
+numpy
+pandas
+pyarrow
+scikit-learn
+matplotlib
+torch                 # CPU build is enough; Colab ships a CUDA build
+huggingface_hub       # pulls the pre-packaged data from the HF dataset repo
+einops                # required by SatCLIP's lightweight location encoder (Demo 1)
+
+# SatCLIP (Demo 1) is installed at runtime by cloning github.com/microsoft/satclip
+# (only its lightweight location encoder is used -> just torch + einops, no torchgeo/lightning).
+
+# ---------------------------------------------------------------------------
+# Extra deps for the OFFLINE data-prep scripts in scripts/ (organizers only,
+# NOT needed by tutorial participants).
+# ---------------------------------------------------------------------------
+# earthengine-api     # AEF + AAFC + Sentinel-2 sampling (needs a GEE project)
+# geopandas           # ecoregion shapefile spatial join
+# shapely
+# datasets            # downloading EuroSAT from the Hub for subsetting
+# requests

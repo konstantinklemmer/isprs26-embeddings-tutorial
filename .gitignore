@@ -1,0 +1,28 @@
+# Staged tutorial data — hosted on Hugging Face Hub, not committed
+local/
+
+# Schedule / planning docs — not part of the published tutorial
+docs/
+
+# SatCLIP checkout (cloned at runtime in the notebook / prep)
+satclip/
+
+# Download caches (ecoregions shapefile, etc.)
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Earth Engine credentials (never commit)
+.config/earthengine/
+*.ee_creds
