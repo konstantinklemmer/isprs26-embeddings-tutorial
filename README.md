@@ -13,8 +13,8 @@ account required.
 
 | | Notebook | What you do | Open in Colab |
 |---|---|---|---|
-| **Demo 1** | [`demo1_using_earth_embeddings.ipynb`](notebooks/demo1_using_earth_embeddings.ipynb) | *Use* pre-made embeddings for prediction: coarse global **SatCLIP** location embeddings → ecoregion/biome; fine-grained **AlphaEarth** pixel embeddings → Canadian crop-type mapping. Includes a satellite-imagery baseline and **geographic transfer** (train on area A, predict on unseen area B). | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/konstantinklemmer/isprs26-embeddings-tutorial/blob/main/notebooks/demo1_using_earth_embeddings.ipynb) |
-| **Demo 2** | [`demo2_producing_earth_embeddings.ipynb`](notebooks/demo2_producing_earth_embeddings.ipynb) | *Produce* your own embeddings with the training-free **MOSAIKS** random convolutional features, and see how **spectral bands** and **image size** change downstream accuracy. Ends with a similarity ("find places like this") map. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/konstantinklemmer/isprs26-embeddings-tutorial/blob/main/notebooks/demo2_producing_earth_embeddings.ipynb) |
+| **Demo 1** | [`demo1_using_earth_embeddings.ipynb`](notebooks/demo1_using_earth_embeddings.ipynb) | *Use* pre-made embeddings for prediction: coarse global **SatCLIP** location embeddings → ecoregion/biome; fine-grained **AlphaEarth** pixel embeddings → Canadian crop-type mapping. Includes a satellite-imagery baseline and **geographic transfer** — hold out whole continents (a configurable leave-one-continent-out sweep) and map *where* out-of-domain predictions fail. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/konstantinklemmer/isprs26-embeddings-tutorial/blob/main/notebooks/demo1_using_earth_embeddings.ipynb) |
+| **Demo 2** | [`demo2_producing_earth_embeddings.ipynb`](notebooks/demo2_producing_earth_embeddings.ipynb) | *Produce* your own embeddings with the training-free **MOSAIKS** random convolutional features, see how **spectral bands** and **image size** change downstream accuracy, then compare against a **pretrained SSL4EO-S12 foundation model** loaded from the Hub. Ends with a similarity ("find places like this") map. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/konstantinklemmer/isprs26-embeddings-tutorial/blob/main/notebooks/demo2_producing_earth_embeddings.ipynb) |
 
 ## How the data works
 
@@ -41,6 +41,8 @@ local/       staged data before upload to Hugging Face (git-ignored)
 - **AAFC Annual Crop Inventory** — Agriculture and Agri-Food Canada, Open Government Licence – Canada.
 - **Sentinel-2** — Copernicus / ESA.
 - **EuroSAT** — Helber et al., 2019 (Sentinel-2 land-cover patches).
+- **SSL4EO-S12** pretrained ResNet-18 — Wang et al., 2022; weights pulled from the public HF repo
+  [`torchgeo/resnet18_sentinel2_all_moco`](https://huggingface.co/torchgeo/resnet18_sentinel2_all_moco) (via TorchGeo).
 
 ## License
 
