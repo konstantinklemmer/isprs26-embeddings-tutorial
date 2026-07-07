@@ -44,6 +44,36 @@ local/       staged data before upload to Hugging Face (git-ignored)
 - **SSL4EO-S12** pretrained ResNet-18 — Wang et al., 2022; weights pulled from the public HF repo
   [`torchgeo/resnet18_sentinel2_all_moco`](https://huggingface.co/torchgeo/resnet18_sentinel2_all_moco) (via TorchGeo).
 
+## Going further
+
+### Free LGND Embeddings API access for researchers
+
+Academics can get **premium access to [LGND](https://lgnd.ai)'s Embeddings API for free** —
+learn more and apply via the [research tier](https://lgnd.ai/resources/research-tier).
+
+### Readings
+
+- Klemmer, Konstantin, et al. "Earth Embeddings: Towards AI-centric Representations of our Planet." *IEEE GRSM* (2026). [[EarthArXiv]](https://eartharxiv.org/repository/view/11083/)
+- Fang, Heng, et al. "Earth Embeddings as Products: Taxonomy, Ecosystem, and Standardized Access." *arXiv* (2026). [[arXiv]](https://arxiv.org/abs/2601.13134)
+- Rolf, Esther, et al. "Mission Critical — Satellite Data is a Distinct Modality in Machine Learning." *ICML* (2024). [[arXiv]](https://arxiv.org/abs/2402.01444)
+- Corley, Isaac, et al. "No One Knows the State of the Art in Geospatial Foundation Models." *arXiv* (2026). [[arXiv]](https://arxiv.org/abs/2605.12678)
+- Betti, Livia, et al. "What's in an Earth Embedding? An Explainability Analysis of Location Encoders." *arXiv* (2026). [[arXiv]](https://arxiv.org/abs/2606.24997)
+- Kaur, Amandeep, et al. "Pretrain Where? Investigating How Pretraining Data Diversity Impacts Geospatial Foundation Model Performance." *CVPR* (2026). [[arXiv]](https://arxiv.org/abs/2604.21104)
+- van der Plas, Thijs L., et al. "Better Together: Evaluating the Complementarity of Earth Embedding Models." *arXiv* (2026). [[arXiv]](https://arxiv.org/abs/2605.18667)
+- Gilch, Luis, et al. "How to Embed Matters: Evaluation of EO Embedding Design Choices." *CVPR* (2026). [[arXiv]](https://arxiv.org/abs/2603.10658)
+- Vinge, Rikard, et al. "NeuCo-Bench: A Novel Benchmark Framework for Neural Embeddings in Earth Observation." *CVPR* (2026). [[arXiv]](https://arxiv.org/abs/2510.17914)
+- Corley, Isaac, et al. "From Pixels to Patches: Pooling Strategies for Earth Embeddings." *arXiv* (2026). [[arXiv]](https://arxiv.org/abs/2603.02080)
+
+### Talks
+
+- [Bad Tables: Why You Shouldn't Trust Results Tables in RS Foundation Model Papers](https://youtu.be/oKkzFSrKzEA) — Anthony Fuller
+- [2025 LIDS Seminar — Konstantin Klemmer (Microsoft Research)](https://www.youtube.com/watch?v=oDZrZXSakfY) — MIT LIDS
+- [Earth Embeddings: Learning Mental Maps in Neural Nets](https://youtu.be/Mnjrh-uc2Os) — AI + Environment Summit 2025
+
+### Community
+
+- **TorchGeo** — join the community on [Slack](https://torchgeo.org/).
+
 ## License
 
 Code released under the MIT License (see `LICENSE`). Data subject to the licenses above.
