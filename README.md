@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="slides/ISPRS_Tutorial_EE.jpg" alt="Towards Geospatial Embeddings — ISPRS 2026 Congress Tutorial, Toronto" width="100%">
+</p>
+
 # Towards Geospatial Embeddings — ISPRS 2026 Tutorial
 
 Code and notebooks for the **ISPRS Congress 2026** tutorial
