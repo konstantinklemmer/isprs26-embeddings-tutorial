@@ -9,6 +9,8 @@ The tutorial pairs lectures with two hands-on coding sessions. Both notebooks ar
 run **start-to-finish on a free Google Colab CPU runtime** — no GPU, and no Earth Engine
 account required.
 
+📑 **Lecture slides:** [`slides/ISPRS_Tutorial_EE.pdf`](slides/ISPRS_Tutorial_EE.pdf).
+
 ## The two demos
 
 | | Notebook | What you do | Open in Colab |
@@ -26,6 +28,7 @@ no login, no Earth Engine. The scripts that build those files from the original 
 
 ```
 notebooks/   the two demo notebooks (the things participants run)
+slides/      lecture slides (PDF)
 scripts/     offline data-prep (organizers only; some steps need a GEE project)
 tutorial/    small reference library (RCF featurizer) used by tests/prep
 tests/       unit tests for the reusable code
